@@ -1,0 +1,129 @@
+/* styles.css */
+
+.component-container {
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .button-primary {
+    background-color: #ff4081;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .button-primary:hover {
+    background-color: #ff6eac;
+  }
+  
+  .input-date {
+    display: inline-block;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .input-date:focus {
+    outline: none;
+    border-color: #ff4081;
+    box-shadow: 0 0 5px rgba(255, 64, 129, 0.5);
+  }
+  
+  .file-input {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    padding: 10px 20px;
+    border-radius: 25px;
+    background-color: #ff4081;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .file-input:hover {
+    background-color: #ff6eac;
+  }
+  
+  .file-input input[type="file"] {
+    position: absolute;
+    left: -9999px;
+  }
+  
+  .file-input-label {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .file-input-value {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+  .file-input-value::before {
+    content: "Choose File";
+  }
+  
+  .file-input input[type="file"]:focus + .file-input-value::before {
+    border: 1px solid #ff4081;
+  }
+  
+  .file-input input[type="file"] + .file-input-value::before {
+    content: attr(data-value);
+    display: inline-block;
+    vertical-align: middle;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #f8f8f8;
+    color: #333;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .file-input input[type="file"] + .file-input-value::after {
+    content: "Browse";
+    display: inline-block;
+    vertical-align: middle;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #ff4081;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .file-input input[type="file"]:focus + .file-input-value::after {
+    background-color: #ff6eac;
+  }
+  
+  .error-message {
+    color: #ff4081;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
